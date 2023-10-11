@@ -8,10 +8,7 @@ export default function Hero() {
         <p className='hero__statement'>
           Health Bits is your gateway to a healthier, happier you. Dive into a world of 
           well-being, where we unravel the secrets to a nutritious diet, effective fitness
-          routines, and tips for fostering a healthy lifestyle. Whether you're a health-
-          conscious mom or an enthusiast seeking wellness guidance, Health Bits has the 
-          essential nuggets to elevate your journey toward vibrant living. Join us in 
-          embracing the bits of wisdom that make a big difference in your health and vitality.
+          routines, and tips for fostering a healthy lifestyle.
         </p>
       </div>
       <div className="hero__components">
