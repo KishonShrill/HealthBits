@@ -1,0 +1,95 @@
+@import "../../public/fonts/Satoshi/css/satoshi.css";
+
+/* 
+font-family: 'Bevan', serif;
+font-family: 'Dela Gothic One', sans-serif;
+font-family: 'Young Serif', serif; 
+*/
+
+.hero {
+  height: 70vh;
+  width: 100%;
+  padding-top: 10rem;
+  margin-bottom: 8rem;
+  display: flex;
+}
+
+/* 1st Container */
+.hero__texts {
+  padding-left: 6%;
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.hero__subtitle {
+  padding-left: 0.5rem;
+  font-family: 'Satoshi-Bold', sans-serif;
+  font-size: 5.625rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--clr-light);
+  color: var(--clr-highlight);
+}
+
+.hero__title {
+  font-family: 'Satoshi-Black', sans-serif;
+  font-size: 10.3125rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--clr-light);
+  color: var(--clr-rose);
+  transform: translateY(-5rem);
+}
+
+.hero__statement {
+  padding-left: 1.9rem;
+  font-size: var(--size-l);
+  transform: translateY(-5rem);
+  color: var(--clr-light);
+}
+
+
+/* 2nd Container */
+.hero__components {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__img {
+  width: 350px;
+  border-radius: 40px;
+  transition: width 0.3s;
+}
+.hero__img:hover { width: 25rem; }
+
+.hero__components img:not(:first-child) {
+  position: absolute;
+  height: 9.375rem;
+  z-index: -1;
+  transform: translate(0px, 0px) rotate(0);
+  transition: all 0.8s;
+}
+.hero__img ~ img:nth-child(5) {height: 50px;}
+.hero__img ~ img:nth-child(6) {height: 70px;}
+
+.hero__img:hover ~ img:nth-child(2) {
+  transform: translate(-280px, -150px) rotate(-30deg);
+}
+.hero__img:hover ~ img:nth-child(3) {
+  transform: translate(300px, 150px);
+}
+.hero__img:hover ~ img:nth-child(4) {
+  transform: translate(300px, -250px) rotate(30deg);
+}
+.hero__img:hover ~ img:nth-child(5) {
+  transform: translate(100px, -250px) rotate(30deg);
+}
+.hero__img:hover ~ img:nth-child(6) {
+  transform: translate(-290px, 250px) rotate(50deg);
+}

@@ -1,0 +1,15 @@
+.banner {
+  position: absolute;
+  height: 50vh;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: grey;
+}
+
+.banner__img {
+  background-size: cover;
+  transform: translateY(3.1rem) scale(1.3);
+}

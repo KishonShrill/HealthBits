@@ -1,0 +1,52 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 8vh;
+  width: 100%;
+  padding: 0 8%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+header .header__img{
+  width: var(--size-6xl);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+header ul{
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.nav__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: var(--size-3xl)
+}
+
+.nav__logo h1 {
+  font-family: 'Bevan', serif;
+  font-size: var(--size-3xl);
+  color: red;
+}
+
+.nav__url{
+  font-size: var(--size-l);
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+.nav__url:hover {
+  color: blue;
+}
+
+.nav__btn {
+  font-size: var(--size-l);
+}

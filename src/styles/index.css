@@ -1,0 +1,111 @@
+/* 
+  font-family: 'Bevan', serif;
+  font-family: 'Dela Gothic One', cursive;
+  font-family: 'Young Serif', serif; 
+*/
+
+/* xs */
+/* @media (min-width: 475px) {} */
+/* s */
+/* @media (min-width: 640px) {} */
+/* m */
+/* @media (min-width: 768px) {} */
+/* l */
+/* @media (min-width: 1024px) {} */
+/* xl */
+/* @media (min-width: 1280px) {} */
+/* xxl */
+/* @media (min-width: 1536px) {} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* colors */
+  --clr-dark: #1a1e33;
+  --clr-light: #fffffe;
+  --clr-main: hsla(241, 33%, 75%, 1);
+  --clr-secondary: hsla(241, 32%, 41%, 1);
+  --clr-tertiary: hsla(238, 46%, 23%, 1);
+  --clr-rose: rgb(240, 54, 54);
+  --clr-highlight: hsla(59, 100%, 50%, 1);
+  
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-s: 0.875rem;
+  --size-base: 1rem;
+  --size-l: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+body {
+  background-color: var(--clr-dark);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.05em;
+  background-color: var(--clr-rose);
+  color: #fffffe;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  transition: all 0.3s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+.section {
+  margin-top: 5rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+span {
+  color: var(--clr-rose);
+}

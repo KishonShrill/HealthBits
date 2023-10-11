@@ -1,0 +1,31 @@
+.about {
+  height: auto;
+  width: 100%;
+  padding: 2rem 7%;
+  background-color: rgb(44, 44, 44);
+  color: aliceblue;
+  display: flex;
+}
+
+.about div:first-child {
+  flex: 2;
+}
+.about div:not(:first-child) {
+  flex: 1;
+}
+
+.about__icons {
+  margin-bottom: 1rem;
+  font-size: 34px;
+}
+.about__icons i {
+  margin-right: 1rem;
+}
+
+.about__icons i:nth-child(1):hover {color: #4267B2;}
+.about__icons i:nth-child(2):hover {
+  border-radius: 10px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);}
+.about__icons i:nth-child(3):hover {color: #1DA1F2;}
+.about__icons i:nth-child(4):hover {color: #c4302b;}
+
