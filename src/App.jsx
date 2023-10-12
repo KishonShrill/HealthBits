@@ -6,9 +6,8 @@ import Banner from './components/Banner.jsx';
 import ContentInfo from './components/ContentInfo.jsx';
 import FacebookPosts from './components/HealthBits.jsx';
 import Updates from './components/Updates.jsx';
-import About from './components/About.jsx';
+import Footer from './components/Footer.jsx';
 
-import ProductList from './api/Products.jsx'; // Adjust the import path as needed
 import './styles/App.css'
 
 export default function App() {
@@ -20,7 +19,7 @@ export default function App() {
       <ContentInfo />
       <FacebookPosts />
       <Updates />
-      <About />
+      <Footer />
     </>
   );
 };

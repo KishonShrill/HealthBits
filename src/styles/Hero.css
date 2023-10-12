@@ -44,19 +44,20 @@ font-family: 'Young Serif', serif;
 .hero__subtitle {
   padding-left: 0.5rem;
   font-family: 'Satoshi-Bold', sans-serif;
-  font-size: 5.625rem;
+  font-size: 4.8vw;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--clr-light);
   color: var(--clr-highlight);
+  transform: translateY(1rem);
 }
 
 .hero__title {
   font-family: 'Satoshi-Black', sans-serif;
-  font-size: 10.3125rem;
+  font-size: 8.8vw;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--clr-light);
   color: var(--clr-rose);
-  transform: translateY(-5rem);
+  transform: translateY(-3rem);
 }
 
 .hero__statement {
@@ -114,11 +115,9 @@ font-family: 'Young Serif', serif;
 @media (max-width: 1838px) {
   .hero__subtitle {
     padding-left: 0.5rem;
-    font-size: var(--size-7xl);
   }
   .hero__title {
-    font-size: var(--size-9xl);
-    transform: translateY(-4rem);
+    transform: translateY(-2.5rem);
   }
   .hero__statement {
     padding-left: .5rem;
@@ -146,11 +145,9 @@ font-family: 'Young Serif', serif;
 @media (max-width: 1536px) {
   .hero__subtitle {
     padding-left: 0.3rem;
-    font-size: var(--size-5xl);
   }
   .hero__title {
-    font-size: var(--size-8xl);
-    transform: translateY(-3rem);
+    transform: translateY(-2.2rem);
   }
   .hero__statement {
     padding-left: .5rem;
@@ -178,11 +175,9 @@ font-family: 'Young Serif', serif;
 @media (max-width: 1280px) {
   .hero__subtitle {
     padding-left: 0.2rem;
-    font-size: var(--size-5xl);
   }
   .hero__title {
-    font-size: var(--size-7xl);
-    transform: translateY(-2.5rem);
+    transform: translateY(-2rem);
   }
   .hero__statement {
     padding-left: .5rem;
@@ -204,10 +199,6 @@ font-family: 'Young Serif', serif;
   }
   .hero__subtitle {
     padding-left: 0rem;
-    font-size: var(--size-5xl);
-  }
-  .hero__title {
-    font-size: var(--size-8xl);
   }
   .hero__statement {
     text-align: center;

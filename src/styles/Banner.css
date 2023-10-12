@@ -1,7 +1,9 @@
 .banner {
   position: absolute;
-  height: 50vh;
-  width: 80%;
+  bottom: -14.375rem;
+  max-height: 500vh;
+  max-width: 100%;
+  /* width: 100%; */
   margin: 0 auto;
   overflow: hidden;
   right: 50%;
@@ -10,6 +12,13 @@
 }
 
 .banner__img {
+  max-width: 100%;
   background-size: cover;
-  transform: translateY(3.1rem) scale(1.3);
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .banner {
+    width: 100%;
+  }
 }

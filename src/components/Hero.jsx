@@ -4,6 +4,7 @@ export default function Hero() {
     <div className='hero'>
       <div className='hero__texts'>
         <h2 className='hero__subtitle'>Health and Wellness</h2>
+        <hr />
         <h1 className='hero__title'>Health Bits</h1>
         <p className='hero__statement'>
           Health Bits is your gateway to a healthier, happier you. Dive into a world of 

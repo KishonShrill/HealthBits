@@ -106,6 +106,6 @@ button {
   color: inherit;
 }
 
-span {
+strong {
   color: var(--clr-rose);
 }
