@@ -61,10 +61,6 @@
   --size-10xl: 10rem;
 }
 
-body {
-  background-color: var(--clr-dark);
-}
-
 .btn {
   display: inline-block;
   font-weight: 600;
@@ -85,6 +81,16 @@ body {
 
 .section {
   margin-top: 5rem;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* border: 1px solid red;   */
 }
 
 img,
@@ -108,4 +114,51 @@ button {
 
 strong {
   color: var(--clr-rose);
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 100%;
+  }
+}
+/* s */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+/* m */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* l */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .section {
+    margin-top: 10rem;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+/* xxl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+/* xxxl */
+@media (min-width: 1836px) {
+  .container {
+    max-width: 1836px;
+  }
 }

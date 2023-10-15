@@ -9,14 +9,16 @@ import Updates from './components/Updates.jsx';
 import Footer from './components/Footer.jsx';
 
 import './styles/App.css'
+import animationOnScreen from './components/Observer.jsx';
 
 export default function App() {
+  animationOnScreen;
   return (
     <>
       <Header />
       <Hero />
-      <Banner />
       <ContentInfo />
+      {/* <Banner /> */}
       <FacebookPosts />
       <Updates />
       <Footer />

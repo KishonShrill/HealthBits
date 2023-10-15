@@ -1,0 +1,65 @@
+@keyframes sticky-parallax-header-move-and-size {
+	from {
+		background-position: 50% 0%;
+		height: 100vh;
+		/* font-size: calc(4vw + 1em); */
+	}
+	to {
+		background-position: 50% 0%;
+		background-color: #0b1584;
+		height: 8vh;
+		/* font-size: 2em; */
+	}
+}
+
+#sticky-parallax-header {
+  background-image: url('../../public/images/healthbits-cover.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+  width: 100%;
+	height: 100%;
+	padding-inline: 8%;
+	top: 0;
+  z-index: 1 ;
+	overflow: hidden;
+
+	animation: sticky-parallax-header-move-and-size linear forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 90vh;
+}
+
+.hero__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	background: linear-gradient(
+		to left, rgba(255, 255, 255, 0) 0%, 
+		rgba(255, 255, 255, 0.1) 30%, 
+		rgba(255, 255, 255, 1) 50%,
+		rgba(255, 255, 255, 1) 60%,
+		rgba(255, 255, 255, 1) 70%,
+		rgba(255, 255, 255, 1) 100%);
+}
+
+.hero__texts {
+	min-height: 100vh;
+	max-width: 50%;
+	position: absolute;
+	left: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+
+	/* background-color: #0b15841a; */
+}
+
+/* .hero__title {
+
+} */

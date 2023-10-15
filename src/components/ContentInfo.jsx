@@ -1,7 +1,7 @@
 import '../styles/ContentInfo.css';
 export default function ContentInfo() {
   return (
-    <section className='contentInfo'>
+    <section className='container contentInfo'>
       <div>
         <img src="https://fakeimg.pl/100x100" alt="" />
         <h2>1</h2>
