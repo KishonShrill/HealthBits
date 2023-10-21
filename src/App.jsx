@@ -17,11 +17,11 @@ export default function App() {
     <>
       <Header />
       <Hero />
-      <ContentInfo />
+      {/* <ContentInfo /> */}
       {/* <Banner /> */}
       <FacebookPosts />
-      <Updates />
-      <Footer />
+      {/* <Updates /> */}
+      {/* <Footer /> */}
     </>
   );
 };

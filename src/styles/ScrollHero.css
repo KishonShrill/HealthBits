@@ -1,0 +1,232 @@
+@keyframes sticky-parallax-header-move-and-size {
+	from {
+		height: 100vh;
+		/* font-size: calc(4vw + 1em); */
+	}
+	to {
+		background-color: #0b158448;
+		height: 8vh;
+		/* font-size: 2em; */
+	}
+}
+
+#sticky-parallax-header {
+	position: fixed;
+  width: 100%;
+	height: 100%;
+	padding-inline: 8%;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	top: 0;
+  z-index: 1;
+	overflow: hidden;
+
+	animation: sticky-parallax-header-move-and-size linear forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 90vh;
+}
+
+.hero hr {
+	display: none;
+	border-top: 1px solid #ffffff; /* 1-pixel solid black line */
+  margin: 20px 0; /* Adds spacing above and below the line */
+	z-index: 1;
+}
+
+.hero__background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url('../../public/images/herobackground.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.hero__background::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	z-index: 0;
+}
+
+.hero__texts {
+	width: 100%;
+	padding-top: 8vh;
+	margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	text-align: center;
+	color: var(--clr-light);
+	z-index: 1;
+}
+
+.hero__texts p {
+	color: #ffffff98;
+}
+
+.hero__title {
+	width: 100%;
+	font-size: var(--size-5xl);
+	line-height: var(--size-4xl);
+}
+
+.hero__btn {
+	font-size: var(--size-s);
+}
+
+.hero__texts2 {
+	width: 100%;
+	height: 100%;
+	display: none !important;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: var(--size-10xl);
+	color: var(--clr-light);
+	z-index: 1;
+}
+
+.hero__statements {
+	font-size: var(--size-base);
+}
+
+.hero__texts2 a {
+	position: relative;
+	color: aliceblue;
+	text-decoration: none;
+	z-index: 2;
+}
+.hero__texts2 a:hover {color: rgb(34, 151, 253);}
+
+.hero__texts2 a h2{
+	display: inline-block;
+}
+
+.hero__texts2 a h2::before {
+	content: '';
+	position: absolute;
+	top: 20px;
+	width: 0px;
+	height: 5px;
+	border-radius: 20px;
+	background: rgb(34, 151, 253);
+	z-index: 1;
+	transition: width .3s;
+} 
+
+.hero__texts2 a:hover h2::before{
+	width: 100%;
+}
+
+/* .hero__img {
+	width: 100%;
+	height: 100%;
+	padding-top: 8vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+} */
+
+/* .hero__blobImg {
+	transition: y 0.2s;
+} */
+
+/* .hero__blobImg:hover {
+	y: 0.625rem;
+} */
+
+/* xs */
+/* @media (min-width: 475px) {} */
+/* s */
+@media (min-width: 640px) {
+	.hero__title {
+		font-size: var(--size-7xl);
+		line-height: var(--size-6xl);
+	}
+	.hero__btn {
+		font-size: var(--size-base);
+	}
+}
+/* m */
+@media (min-width: 768px) {
+	#sticky-parallax-header {
+		flex-direction: column;
+	}
+	.hero__texts {
+		margin-bottom: 0;
+		min-height: 75vh;
+		max-width: 100%;
+	}
+	.hero__title {
+		font-size: var(--size-8xl);
+		line-height: var(--size-7xl);
+	}
+	.hero__btn {
+		font-size: var(--size-l);
+	}
+	.hero__img {
+		width: 50%;
+	}
+}
+/* l */
+@media (min-width: 1024px) {
+	.hero hr {
+		display: inline;
+	}
+	.hero__texts {
+		align-items: flex-start;
+		text-align: left;
+	}
+	.hero__title {
+		width: 8ch;
+		font-size: var(--size-9xl);
+		line-height: var(--size-8xl);
+	}
+	.hero__btn {
+		font-size: var(--size-xl);
+	}
+	.hero__texts2 {
+		display: grid !important;
+		column-gap: var(--size-10xl);
+	}
+	.hero__statements {
+		font-size: var(--size-s);
+	}
+}
+/* xl */
+@media (min-width: 1280px) {
+	.hero__title {
+		font-size: var(--size-10xl);
+		line-height: var(--size-9xl);
+	}
+	.hero__btn {
+		font-size: var(--size-2xl);
+	}
+	.hero__texts2 {
+		column-gap: var(--size-5xl);
+	}
+	.hero__statements {
+		font-size: var(--size-s);
+	}
+}
+/* xxl */
+@media (min-width: 1536px) {
+	.hero__texts2 {
+		column-gap: var(--size-10xl);
+	}
+	.hero__statements {
+		font-size: var(--size-base);
+	}
+}

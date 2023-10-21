@@ -28,9 +28,9 @@ const FacebookPosts = () => {
     <>
       <div className='facebook-posts'>
         <div className='healthbits__info'>
-          <div>
+          <div className='healthbits__texts-wrapper'>
             <h1><strong>Health Bits is more than a brand...</strong></h1>
-            <p>It's a holistic approach to health and wellness 
+            <p className='healthbits__texts'>It's a holistic approach to health and wellness 
               that we're passionate about sharing with you. At Health Bits, we believe in empowering 
               individuals to embrace a lifestyle focused on well-being, nutrition, and fitness. Our mission 
               is to guide and educate, providing insights on healthy diets, the importance of proper 

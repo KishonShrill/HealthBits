@@ -21,13 +21,18 @@ font-family: 'Young Serif', serif;
   flex-direction: column;
 }
 
+.healthbits__texts-wrapper {
+  height: auto  ;
+}
+
 .healthbits__info h1 {
   font-family: 'Dela Gothic One', cursive;
   font-weight: 400;
   font-size: var(--size-4xl);
 }
 
-.healthbits__info p {
+.healthbits__texts {
+  max-width: 100%;
   margin: var(--size-4xl) 0;
   font-family: 'Young Serif', serif;
   font-weight: 400;
