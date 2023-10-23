@@ -1,5 +1,5 @@
 import '../styles/ScrollHero.css';
-import HealthBitsCover from '../../public/images/healthbits-cover-removebg.png';
+import HealthBitsCover from '../../src/images/healthbits-cover-removebg.png';
 
 export default function Hero() {
   return (

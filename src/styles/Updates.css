@@ -9,8 +9,8 @@
   background-color: var(--clr-secondary);
 }
 
-.updates div {
-  height: 20rem;
+.embeds {
+  height: auto;
   margin: auto 0;
   background-color: aqua;
 }

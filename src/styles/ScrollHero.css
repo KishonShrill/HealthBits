@@ -99,6 +99,7 @@
 
 .hero__statements {
 	font-size: var(--size-base);
+	opacity: .8;
 }
 
 .hero__texts2 a {

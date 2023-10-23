@@ -25,12 +25,3 @@ export default function App() {
     </>
   );
 };
-
-function MyButton() {
-  return (
-    <button className='btn'>
-      I'm a Button
-    </button>
-  );
-};
-
